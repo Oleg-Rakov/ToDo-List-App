@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST APP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+    <div class="input-block">
+      <div class="title">
+        <h1>ToDo List</h1>
+      </div>
+      <input id="input" type="text" placeholder="
+      Enter a new case...">
+
+      <div class="check-block">
+        <div class="checkEmpty">
+          <!-- <input id="myCheckEmpty" type="checkbox"> -->
+          <!-- <span class="checkTitle">Убрать Отмеченные</span> -->
+        </div>
+
+        <!-- <button class="checkCompleteButton" id="toCheckComplete">
+        ВЫДЕЛИТЬ
+        </button> -->
+
+        <div class="checkCompleted">
+          <!-- <input id="myCheckComplete" type="checkbox"> -->
+          <!-- <span class="checkTitle">Оставить Отмеченные</span> -->
+        </div>
+      </div>
+
+    </div>
+
+    <div class="list">
+      <ul id="ulList">
+
+      </ul>
+    </div>
+
+    <div class="button-block">
+      <button class="deleteComp" id="myCheckEmpty">Hide Completed</button>
+      <button class="hideUnmark" id="myCheckComplete">Hide Unmarked</button>
+      <button class="checkCompleteButton" id="toCheckComplete">Complete All</button>
+      <span class="leftComplete">Left to Complete:
+        <span class="counterLi" id="counter">0</span>
+      </span>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

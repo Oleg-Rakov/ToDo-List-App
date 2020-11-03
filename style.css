@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3d619b;
+  font-family: Helvetica, Arial;
+  color: darkslategrey;
+}
+
+.app {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.input-block {
+  width: 67%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 70px;
+  padding: 50px;
+  text-align: center;
+  background-color: #43506c;
+  border-radius: 15px;
+}
+
+.title>h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.input-block>input[type='text'] {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 100%;
+  padding: 16px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.list {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px 0px;
+  font-size: 25px;
+  opacity: 1;
+}
+
+.list:hover {
+  opacity: 0.9;
+}
+
+.list>ul {
+  position: relative;
+  list-style-type: none;
+}
+
+.list>ul>li {
+  margin: 15px;
+  border-radius: 10px;
+  width: 96%;
+  margin-left: 2%;
+  position: relative;
+  font-size: 24px;
+  background-color: #eee;
+  transition: 0.5s all;
+  padding: 12px 10px;
+}
+
+.list>ul>li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.list>ul>li:hover {
+  background-color: #ddd;
+}
+
+.spanClose {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px 10px;
+}
+
+.spanClose:hover {
+  color: red;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.back {
+  background: red;
+}
+
+.checked {
+  background-color: #72e872!important;
+}
+
+.checked::before {
+  content: '✓';
+  /* position: absolute; */
+  padding: 15px 3px;
+  top: 0;
+  left: 0;
+  color: #211031d6;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.checkTitle {
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+}
+
+.check-block {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.arrow1 {
+  position: absolute;
+  right: -5%;
+  top: 0;
+  color: white;
+}
+
+.arrow1:hover {
+  color: green;
+  transition: all 0.2s ease;
+}
+
+.arrow2 {
+  position: absolute;
+  right: -5%;
+  top: 51%;
+  color: white;
+}
+
+.arrow2:hover {
+  color: red;
+  transition: all 0.5s ease;
+}
+
+.checkCompleteButton, .deleteComp, .hideUnmark {
+  border: none;
+  border-radius: 5px;
+  background-color: #587ebb;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.checkCompleteButton:hover, .deleteComp:hover, .hideUnmark:hover {
+  background-color: #6aa3ff;
+  color: black;
+}
+
+.button-block {
+  display: flex;
+  justify-content: space-between;
+  width: 67%;
+  margin: 0 auto;
+}
+
+.active-btn {
+  border: 3px solid green;
+}
+
+.leftComplete {
+  display: flex;
+  order: -1;
+  align-items: center;
+}
+
+.counterLi, .leftComplete {
+  color: whitesmoke;
+}
+
+.edit {
+  font-size: 25px;
+  position: absolute;
+  right: 5%;
+  top: 25%;
+}
+
+.edit:hover {
+  color: green;
+  font-size: 35px;
+  top: 0;
+}
+
+.editLi {
+  width: 93%;
+  padding: 15px;
+  border: none;
+  background-color: grey;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
